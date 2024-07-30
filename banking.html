@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="banking.css">
+<body>
+    <header>
+        <div class="homePageHead">
+            <img src="home-icon.png" alt="Home Icon" />
+            <h1>Banking Details</h1>
+            <div class="search-container">
+              <input type="text" class="search-bar" placeholder="Search..." />
+              <button class="search-button">Search</button>
+            </div>
+            <div class="navbar">
+              <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+              </div>
+              <nav class="navlist">
+                <ul>
+                  <li><a href="homepage.html">Homepage</a></li>
+                  <li><a href="aboutus.html">About us</a></li>
+                  <li><a href="login.html">log in</a></li>
+                  <li><a href="signup.html">Sign up</a></li>
+                  <li><a href="banking.html">Banking Details</a></li>
+                  <li><a href="product.html">Product Page</a></li>
+                  <li><a href="insurance.html">Insurance page</a></li>
+                  <li><a href="customer.html">Customer Support</a></li>
+                  <li><a href="feedback.html">Feedback & Improvement</a></li>
+                </ul>
+              </nav>
+            </div>
+    </header>
+    <div class="banking-container">
+        <form>
+            <div class="form-group">
+                <label for="holder-name">Holder Name</label>
+                <input type="text" id="holder-name" required>
+            </div>
+            <div class="form-group">
+                <label for="card-number">Card No.</label>
+                <input type="text" id="card-number" required>
+                <div class="card-icons">
+                    <img src="visa.png" alt="Visa">
+                    <img src="master.webp" alt="Mastercard">
+                    <img src="amex.jpg" alt="American Express">
+                    <img src="Alipay.png" alt="Alipay">
+                </div>
+            </div>
+            <div class="form-group-inline">
+                <div class="form-group">
+                    <label for="expiry-date">Expiry date</label>
+                    <input type="text" id="expiry-date" placeholder="MM/YY" required>
+                </div>
+                <div class="form-group">
+                    <label for="cvv">CVV</label>
+                    <input type="text" id="cvv" required>
+                </div>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="banking.js"></script>
+</body>
+</html>

@@ -1,0 +1,150 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: rgb(137, 154, 216);
+    margin: 0;
+    padding: 0;
+}
+
+.homePageHead {
+    display: flex;
+    align-items: center;
+    background-color: #e0f7fa;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+}
+
+.homePageHead img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.homePageHead h1 {
+    font-size: 2em;
+    margin: 0;
+    font-weight: bold;
+    color: #333;
+}
+
+.search-container {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+.search-bar {
+    padding: 8px;
+    font-size: 14px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+}
+
+.search-button {
+    padding: 8px 16px;
+    font-size: 14px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.navbar {
+    position: relative;
+}
+
+.menu-toggle {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 10px 15px;
+    z-index: 1000;
+}
+
+.bar {
+    height: 3px;
+    width: 25px;
+    background-color: #333;
+    margin: 2px 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.navlist {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1000;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow: visible;
+}
+
+.navlist li {
+    border-bottom: 1px solid #ddd;
+}
+
+.navlist a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.navlist a:hover {
+    background-color: #e0f7fa;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+}
+
+h2 {
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.write-box {
+    width: 100%;
+    height: 700px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    resize: none;
+}
+
+.submit-button {
+    background: linear-gradient(90deg, #004080, #0066cc);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: 10px;
+    height: 60px;
+    flex-shrink: 0;
+}
+
+.submit-button:hover {
+    background: linear-gradient(90deg, #003060, #0050a0);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.button-container {
+    position: absolute;
+    right: 0;
+}
