@@ -1,67 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="insurance.css">
-</head>
-<body>
-    <header>
-        <div class="homePageHead">
-            <img src="home-icon.png" alt="Home Icon" />
-            <h1>Apply Insurance Page</h1>
-            <div class="search-container">
-              <input type="text" class="search-bar" placeholder="Search..." />
-              <button class="search-button">Search</button>
-            </div>
-            <div class="navbar">
-              <div class="menu-toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-              </div>
-              <nav class="navlist">
-                <ul>
-                  <li><a href="homepage.html">Homepage</a></li>
-                  <li><a href="aboutus.html">About us</a></li>
-                  <li><a href="login.html">log in</a></li>
-                  <li><a href="signup.html">Sign up</a></li>
-                  <li><a href="banking.html">Banking Details</a></li>
-                  <li><a href="product.html">Product Page</a></li>
-                  <li><a href="insurance.html">Insurance page</a></li>
-                  <li><a href="customer.html">Customer Support</a></li>
-                  <li><a href="feedback.html">Feedback & Improvement</a></li>
-                </ul>
-              </nav>
-            </div>
-    </header>
-   
-    <div class="container">
-        <div class="offer">
-            <img src="aviva.webp" alt="Aviva">
-            <div class="offer-text">
-                <h3>Offers:</h3>
-                <p>Apply now and receive a 2% cash back on what you purchase!</p>
-            </div>
-        </div>
-        <div class="offer">
-            <img src="singlife.png" alt="Singlife">
-            <div class="offer-text">
-                <h3>Offers:</h3>
-                <p>Apply now and receive up to S$50 voucher for any next purchases!!</p>
-            </div>
-        </div>
-        <div class="offer">
-            <img src="tokio.jpg" alt="Tokio Marine">
-            <div class="offer-text">
-                <h3>Offers:</h3>
-                <p>Apply now! And get a free stainless steel thermal flask!!</p>
-            </div>
-        </div>
-    </div>
-    <button class="view-more">View More</button>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apply Insurance - Insure Mart</title>
+    <link rel="stylesheet" href="insurance.css" />
+    <style>
+      /* Additional Styling for the Insurance Page */
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: #f0f0f0;
+        margin: 0;
+        padding: 0;
+        color: #333;
+      }
 
-<script src="insurance.js"></script>
+      .homePageHead {
+        display: flex;
+        align-items: center;
+        background-color: #005a9c;
+        padding: 20px;
+        border-bottom: 1px solid #ccc;
+        color: white;
+        position: relative;
+      }
+
+      .homePageHead img {
+        width: 40px;
+        height: 40px;
+        margin-right: 15px;
+      }
+
+      .homePageHead h1 {
+        font-size: 2em;
+        margin: 0;
+        font-weight: bold;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 40px auto;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+
+      .offer {
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        width: 23%; /* Adjusted width to fit four items in a row */
+        margin-bottom: 30px;
+        transition: transform 0.3s ease;
+        text-align: center;
+      }
+
+      .offer:hover {
+        transform: scale(1.05);
+      }
+
+      .offer img {
+        width: 100%;
+        height: auto;
+        border-bottom: 1px solid #ddd;
+      }
+
+      .offer-text {
+        padding: 20px;
+      }
+
+      .offer-text h3 {
+        color: #005a9c;
+        margin-bottom: 10px;
+        font-size: 1.5em;
+      }
+
+      .offer-text p {
+        font-size: 1.1em;
+        margin: 0;
+      }
+
+      .offer a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      /* View More Button */
+      .view-more {
+        display: block;
+        margin: 0 auto;
+        padding: 15px 30px;
+        background-color: #007bff;
+        color: white;
+        text-align: center;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: 1.2em;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+        position: relative;
+        right: -75px; /* Adjust this value to position the button in the desired spot */
+        top: 50px; /* Adjust this value to fine-tune vertical positioning */
+      }
+
+      .view-more:hover {
+        background-color: #005bb5;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="homePageHead">
+          <img src="home-icon.png" alt="Home Icon" />
+          <h1>Apply Insurance</h1>
+          <div class="search-container">
+            <input type="text" class="search-bar" placeholder="Search..." />
+            <button class="search-button">Search</button>
+          </div>
+          <div class="navbar">
+            <div class="menu-toggle" id="mobile-menu">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+            <nav class="navlist">
+              <ul>
+                <li><a href="index.html">Homepage</a></li>
+                <li><a href="banking.html">Banking Details</a></li>
+                <li><a href="product.html">Product Page</a></li>
+                <li><a href="insurance.html">Insurance page</a></li>
+                <li><a href="customer.html">Customer Support</a></li>
+                <li><a href="feedback.html">Feedback & Improvement</a></li>
+                <li><a href="welcome.html">Log out</a></li>
+              </ul>
+            </nav>
+          </div>
+  </header>
+
+    <div class="container">
+      <a href="aviva.html" class="offer">
+        <img src="aviva.webp" alt="Aviva" />
+        <div class="offer-text">
+          <h3>Offers:</h3>
+          <p>Apply now and receive a 2% cash back on what you purchase!</p>
+        </div>
+      </a>
+      <a href="singlife.html" class="offer">
+        <img src="singlife.png" alt="Singlife" />
+        <div class="offer-text">
+          <h3>Offers:</h3>
+          <p>
+            Apply now and receive up to S$50 voucher for any next purchases!
+          </p>
+        </div>
+      </a>
+      <a href="tokio.html" class="offer">
+        <img src="tokio.jpg" alt="Tokio Marine" />
+        <div class="offer-text">
+          <h3>Offers:</h3>
+          <p>Apply now and get a free stainless steel thermal flask!</p>
+        </div>
+      </a>
+      <div class="offer">
+        <div class="offer-text">
+          <h3>Special Promotion:</h3>
+          <p>Apply now and stand a chance to win tickets to Venice!</p>
+        </div>
+      </div>
+      <a href="#" class="view-more">View More</a>
+    </div>
+
+    <script src="insurance.js"></script>
+  </body>
 </html>

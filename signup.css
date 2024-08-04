@@ -1,6 +1,6 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-color: rgb(137, 154, 216);
+    background: linear-gradient(to right, #a18cd1, #fbc2eb);
     margin: 0;
     padding: 0;
 }
@@ -8,10 +8,11 @@ body {
 .homePageHead {
     display: flex;
     align-items: center;
-    background-color: #e0f7fa;
+    background: linear-gradient(135deg, #8b008b, #ff69b4);
     padding: 10px 20px;
     border-bottom: 1px solid #ccc;
-    position: relative; /* Positioning context for navlist */
+    position: relative;
+    color: white; /* White text for contrast against the dark background */
 }
 
 .homePageHead img {
@@ -24,13 +25,13 @@ body {
     font-size: 2em;
     margin: 0;
     font-weight: bold;
-    color: #333;
+    color: #fff; /* White text for contrast */
 }
 
 .search-container {
-    margin-left: auto; /* Adjusts the search container to the right */
+    margin-left: auto;
     display: flex;
-    align-items: center; /* Ensures vertical alignment is centered within the container */
+    align-items: center;
 }
 
 .search-bar {
@@ -44,61 +45,61 @@ body {
 .search-button {
     padding: 8px 16px;
     font-size: 14px;
-    background-color: #007BFF;
+    background-color: #0072ff; /* Bright blue button */
     color: white;
     border: none;
     cursor: pointer;
-    margin-left: 10px; /* Provides a little space between the search bar and button */
+    margin-left: 10px;
 }
 
 .navbar {
-    position: relative; /* Positioning context for navlist */
+    position: relative;
 }
 
 .menu-toggle {
     display: flex;
     flex-direction: column;
     cursor: pointer;
-    padding: 10px 15px;  /* Make sure there's enough area to click/tap */
-    z-index: 1000; /* Ensures it's on top of other elements */
+    padding: 10px 15px;
+    z-index: 1000;
 }
 
 .bar {
     height: 3px;
     width: 25px;
-    background-color: #333; /* Dark color for visibility */
+    background-color: #fff; /* White bars for menu toggle to contrast the dark background */
     margin: 2px 0;
     transition: all 0.3s ease-in-out;
 }
 
 .navlist {
-    display: none; /* Hide by default */
-    position: absolute; /* Position absolute to overlap */
-    top: 100%; /* Positions below the header */
+    display: none;
+    position: absolute;
+    top: 100%;
     right: 0;
-    background-color: #f9f9f9;
-    min-width: 200px; /* Adjust width as needed */
+    background-color: #f9f9f9; /* Light gray dropdown background */
+    min-width: 200px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1000; /* Ensures it is on top of other content */
+    z-index: 1000;
     list-style-type: none;
     padding: 0;
     margin: 0;
-    overflow: visible; /* Ensures content spills out */
+    overflow: visible;
 }
 
 .navlist li {
-    border-bottom: 1px solid #ddd; /* Add separator between items */
+    border-bottom: 1px solid #ddd; /* Light gray border between items */
 }
 
 .navlist a {
     display: block;
     padding: 10px;
     text-decoration: none;
-    color: #333;
+    color: #333; /* Dark gray text */
 }
 
 .navlist a:hover {
-    background-color: #e0f7fa;
+    background-color: #e0f7fa; /* Light cyan hover background */
 }
 
 .signup-container {
@@ -116,7 +117,7 @@ body {
 
 .signup-container h1 {
     margin-bottom: 30px;
-    color: #0072ff;
+    color: #005A9C; /* Dark blue color for the header text to match the theme */
 }
 
 .signup-container input[type="email"],
@@ -129,7 +130,7 @@ body {
 }
 
 .signup-container button {
-    background: #0072ff;
+    background: #0072ff; /* Bright blue button */
     color: white;
     padding: 15px;
     border: none;
@@ -141,5 +142,5 @@ body {
 }
 
 .signup-container button:hover {
-    background: #005bb5;
+    background: #005bb5; /* Darker blue on hover */
 }

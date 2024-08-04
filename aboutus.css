@@ -1,6 +1,6 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-color: rgb(137, 154, 216);
+    background: linear-gradient(to right, #a18cd1, #fbc2eb);
     margin: 0;
     padding: 0;
 }
@@ -8,10 +8,11 @@ body {
 .homePageHead {
     display: flex;
     align-items: center;
-    background-color: #e0f7fa;
+    background: linear-gradient(135deg, #8b008b, #ff69b4); /* Updated to a vibrant gradient */
     padding: 10px 20px;
     border-bottom: 1px solid #ccc;
     position: relative;
+    color: white; /* Ensure text is readable on the gradient background */
 }
 
 .homePageHead img {
@@ -24,7 +25,7 @@ body {
     font-size: 2em;
     margin: 0;
     font-weight: bold;
-    color: #333;
+    color: #fff; /* White text to match the header's background */
 }
 
 .search-container {
@@ -105,18 +106,18 @@ body {
     padding: 40px;
     margin: 40px auto;
     max-width: 95%;
-    max-height: 1000%;
     background: #fff;
     box-shadow: 0 6px 12px rgba(0,0,0,0.3);
     border-radius: 20px;
     font-size: 20px;
     line-height: 2;
-    position: absolute;
+    position: relative; /* Changed to relative to fit within a scrolling page */
+    color: #333; /* Set the text color to a readable contrast */
 }
 
 .about-us h2 {
     font-size: 34px;
-    color: #005A9C;
+    color: #0072ff; /* Blue color from previous scheme for consistency */
     margin-bottom: 30px;
 }
 
@@ -128,10 +129,10 @@ body {
 footer {
     text-align: center;
     padding: 20px 0;
-    background: #222;
-    color: #fff;
-    position: fixed;
-    bottom: 0;
+    background: #007BFF; /* Updated footer background to match the theme */
+    color: white;
     width: 100%;
     font-size: 18px;
+    position: relative; /* Made relative so it doesn't overlap with the page content */
+    margin-top: 40px; /* Added margin to create space before the footer */
 }
