@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apply Insurance - Insure Mart</title>
+    <link rel="stylesheet" href="insurance.css" />
+    <style>
+      /* Additional Styling for the Insurance Page */
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: #f0f0f0;
+        margin: 0;
+        padding: 0;
+        color: #333;
+      }
+
+      .homePageHead {
+        display: flex;
+        align-items: center;
+        background-color: #005a9c;
+        padding: 20px;
+        border-bottom: 1px solid #ccc;
+        color: white;
+        position: relative;
+      }
+
+      .homePageHead img {
+        width: 40px;
+        height: 40px;
+        margin-right: 15px;
+      }
+
+      .homePageHead h1 {
+        font-size: 2em;
+        margin: 0;
+        font-weight: bold;
+      }
+      .wallet-container {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+    margin: 120px auto; /* Adjusted margin to account for fixed navbar */
+    }
+
+    h1 {
+        margin-bottom: 30px;
+        color: #333;
+    }
+
+    .balance-display {
+        margin-bottom: 30px;
+        font-size: 1.5em;
+    }
+
+    .transaction input {
+        margin-right: 10px;
+        padding: 15px;
+        width: 180px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .transaction button {
+        padding: 15px 20px;
+        margin: 5px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1em;
+    }
+
+    #add-money {
+        background-color: #4CAF50;
+        color: white;
+    }
+
+    #deduct-money {
+        background-color: #f44336;
+        color: white;
+    }
+
+    #add-money:hover {
+        background-color: #45a049;
+    }
+
+    #deduct-money:hover {
+        background-color: #e53935;
+    }
+
+    @media (max-width: 768px) {
+        .menu-toggle {
+            display: flex;
+        }
+
+    </style>
+    </head>
+    <body>
+      <header>
+        <div class="homePageHead">
+            <img src="home-icon.png" alt="Home Icon" />
+            <h1>Apply Insurance</h1>
+            <div class="search-container">
+              <input type="text" class="search-bar" placeholder="Search..." />
+              <button class="search-button">Search</button>
+            </div>
+            <div class="navbar">
+              <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+              </div>
+              <nav class="navlist">
+                <ul>
+                  <li><a href="index.html">Homepage</a></li>
+                  <li><a href="banking.html">Banking Details</a></li>
+                  <li><a href="product.html">Product Page</a></li>
+                  <li><a href="insurance.html">Insurance page</a></li>
+                  <li><a href="wallet.html">Wallet</a></li>
+                  <li><a href="customer.html">Customer Support</a></li>
+                  <li><a href="feedback.html">Feedback & Improvement</a></li>
+                  <li><a href="welcome.html">Log out</a></li>
+                </ul>
+              </nav>
+            </div>
+
+    </header>
+    <div class="wallet-container">
+        <h1>Digital Wallet</h1>
+        <div class="balance-display">
+            <h2>Balance: $<span id="balance">0.00</span></h2>
+        </div>
+        <div class="transaction">
+            <input type="number" id="amount" placeholder="Enter amount">
+            <button id="add-money">Add Money</button>
+            <button id="deduct-money">Purchase</button>
+        </div>
+    </div>
+    <script src="wallet.js"></script>
+    </body>
+  
